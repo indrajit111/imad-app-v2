@@ -26,11 +26,11 @@ app.get('/a4', function (req, res) {
 /*app.get('/article-one',function(req,res){
 	res.sendfile(path.join(__dirname,'article-one.html'));
 });*/
-app.get('/article-two',function(req,res){
-	res.sendfile(path.join(__dirname, 'ui', 'article-two.html'));
+app.get('/article-one.html', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'article-two'));
 });
-app.get('/article-three',function(req,res){
-	res.sendfile(path.join(__dirname, 'ui','article-three.html'));
+app.get('/article-one.html', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'article-three'));
 });
 
 var port = 8080; // Use 8080 for local development because you might already have apache running on 80
