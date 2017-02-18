@@ -12,6 +12,9 @@ app.get('/', function (req, res) {
 app.get('/ui/style.css', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'style.css'));
 });
+app.get('/article-one.html', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'article-one'));
+});
 
 app.get('/ui/madi.png', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'madi.png'));
@@ -20,9 +23,9 @@ app.get('/a4', function (req, res) {
   res.send('request received . response ke liye wait kar');
 });
 
-app.get('/article-one',function(req,res){
+/*app.get('/article-one',function(req,res){
 	res.sendfile(path.join(__dirname,'article-one.html'));
-});
+});*/
 app.get('/article-two',function(req,res){
 	res.sendfile(path.join(__dirname, 'ui', 'article-two.html'));
 });
