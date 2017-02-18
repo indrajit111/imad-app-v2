@@ -23,9 +23,7 @@ app.get('/a4', function (req, res) {
   res.send('request received . response ke liye wait kar');
 });
 
-/*app.get('/article-one',function(req,res){
-	res.sendfile(path.join(__dirname,'article-one.html'));
-});*/
+
 app.get('/article-two.html', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'article-two'));
 });
