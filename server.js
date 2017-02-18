@@ -17,7 +17,7 @@ app.get('/ui/madi.png', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'madi.png'));
 });
 app.get('/a4', function (req, res) {
-  res.sendFile('request received . response ke liye wait kar');
+  res.send('request received . response ke liye wait kar');
 });
 
 app.get('/article-one',function(req,res){
